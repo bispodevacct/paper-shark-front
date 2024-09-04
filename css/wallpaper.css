@@ -1,0 +1,39 @@
+/* Level 1 */
+.wallpaper {
+    width: calc(100vw * 0.6);
+    height: 100vh;
+
+    background-image: url('../img/wallpaper.webp');
+    background-size: cover;
+
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.wallpaper__bottom {
+    width: 4rem;
+}
+
+/* Level 2 */
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top__qrcode {
+    width: 8rem;
+}
+
+/* Level 3 */
+.information {
+    width: 2rem;
+    height: 2rem;
+}
+
+.information__image {
+    width: 2rem;
+}
