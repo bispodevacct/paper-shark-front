@@ -48,7 +48,7 @@
             </div>
 
             <!-- Formulário -->
-            <form class="form" action="">
+            <form class="form" id="form"">
                 <!-- Conjunto de inputs de cliente e responsável -->
                 <div class="input_set">
                     <!-- Input de cliente -->
@@ -73,7 +73,7 @@
                 <!-- Input de motivo da impressão -->
                 <div class="input_container">
                     <!-- Rótulo de motivo da impressão -->
-                    <label class="input_container__text" for="">Motivo da impressão:</label>
+                    <label class="input_container__text" for="motivo">Motivo da impressão:</label>
 
                     <!-- Input de motivo da impressão -->
                     <select class="input_container__input" id="motivo" name="motivo">
@@ -87,7 +87,7 @@
                     <!-- Input de quantidade de páginas coloridas -->
                     <div class="input_container">
                         <!-- Rótulo de páginas coloridas -->
-                        <label class="input_container__text" for="">Qtd. Pág. Col.:</label>
+                        <label class="input_container__text" for="qtd_col">Qtd. Pág. Col.:</label>
 
                         <!-- Input de páginas coloridas -->
                         <input class="input_container__input" id="qtd_col" name="qtd_col" type="number" min="0" value="0">
@@ -96,7 +96,7 @@
                     <!-- Input de quantidade de páginas preto e branco -->
                     <div class="input_container">
                         <!-- Rótulo de páginas preto e branco -->
-                        <label class="input_container__text" for="">Qtd. Pág. P/B:</label>
+                        <label class="input_container__text" for="qtd_pb">Qtd. Pág. P/B:</label>
 
                         <!-- Input de páginas preto e branco -->
                         <input class="input_container__input" id="qtd_pb" name="qtd_pb" type="number" min="0" value="0">
@@ -106,7 +106,7 @@
                 <!-- Input de método de pagamento -->
                 <div class="input_container">
                     <!-- Rótulo de método de pagamento -->
-                    <label class="input_container__text" for="">Método de pagamento:</label>
+                    <label class="input_container__text" for="metodo">Método de pagamento:</label>
 
                     <!-- Input de método de pagamento -->
                     <select class="input_container__input" name="metodo" id="metodo">
@@ -116,7 +116,7 @@
                 </div>
 
                 <!-- Botão para registrar a impressão -->
-                <button class="form__button">Registrar</button>
+                <button class="form__button" type="submit">Registrar</button>
             </form>
         </div>
 
@@ -133,10 +133,12 @@
                 <!-- Container filho do valor da impressão -->
                 <div class="value_container_son">
                     <!-- Rótulo do valor da impressão -->
-                    <p class="value_container_son__text">R$ <span>99,99</span></p>
+                    <p class="value_container_son__text">R$ <span id="value">0,00</span></p>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="/js/register.js"></script>
 </body>
 </html>
