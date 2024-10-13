@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório - Paper Shark</title>
+
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/wallpaper.css">
+    <link rel="stylesheet" href="/css/right_column.css">
+    <link rel="stylesheet" href="/css/report_right_column.css">
+</head>
+<body>
+    <!-- Imagem de fundo -->
+    <div class="wallpaper">
+        <!-- Container do QR Code e do link de mais informações -->
+        <div class="top">
+            <!-- QR Code do Pix -->
+            <img class="top__qrcode" src="/img/qr-code.png" alt="">
+
+            <!-- Link de informações -->
+             <a class="information" href="">
+                <!-- Imagem de informações -->
+                <img class="information__image" src="/img/information.png" alt="informações">
+             </a>
+        </div>
+
+        <!-- Logo da focus consultoria -->
+        <img class="wallpaper__bottom" src="/img/focus-logo.png" alt="logo da focus">
+    </div>
+
+    <!-- Coluna lateral -->
+    <div class="right_column">
+        <!-- Container do forms e das abas do sistema -->
+        <div class="forms_container">
+            <!-- Container das abas do sistema -->
+            <div class="tab">
+                <!-- Aba de impressão -->
+                <div class="print">
+                    <!-- Rótulo da aba de impressão -->
+                    <a class="print__label" href="/index.html">Impressão</a>
+                </div>
+    
+                <!-- Aba de relatório -->
+                <div class="report">
+                    <!-- Rótulo da aba de relatório -->
+                    <p class="report__label">Relatório</p>
+                </div>
+            </div>
+
+            <!-- Formulário -->
+            <form class="form" id="form"">
+                <!-- Conjunto de inputs de data inicial e final -->
+                <div class="input_set">
+                    <!-- Input de inicial -->
+                    <div class="input_container">
+                        <!-- Rótulo de inicio -->
+                        <label class="input_container__text" for="inicial">De:</label>
+
+                        <!-- Input de inicio -->
+                        <input class="input_container__input" id="inicial" name="inicial" type="date">
+                    </div>
+
+                    <!-- Input de final -->
+                    <div class="input_container">
+                        <!-- Rótulo de responsável -->
+                        <label class="input_container__text" for="final">Até:</label>
+
+                        <!-- Input de responsável -->
+                        <input class="input_container__input" id="final" name="final" type="date">
+                    </div>
+                </div>
+
+                <!-- Botão para registrar a impressão -->
+                <button class="form__button" type="submit">Baixar relatório</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/report.js"></script>
+</body>
+</html>

@@ -36,7 +36,15 @@
 
 .print__label {
     font-size: 1.5rem;
+    text-decoration: none;
     color: var(--text-color);
+
+    width: 100%;
+    height: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .report {

@@ -60,7 +60,7 @@ async function registrarImpressao(e) {
 
     if (qtd_col === 0 && qtd_pb === 0) {
         alert('Não é possível registrar impressões zeradas!');
-        return 0;
+        return;
     }
 
     let envio = confirm("Se o pagamento foi efetuado e as informações estão corretas, clique em ok! Caso contrário, cancelar.");
@@ -69,7 +69,7 @@ async function registrarImpressao(e) {
         return;
     }
 
-    const response = await fetch("https://localhost:3000/add", {
+    const response = await fetch("http://127.0.0.1:3000/add", {
         method: "POST",
         body: JSON.stringify({
             cliente,

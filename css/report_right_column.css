@@ -1,0 +1,7 @@
+.print {
+    background-color: var(--secondary-color);
+}
+
+.report {
+    background-color: var(--primary-color);
+}
